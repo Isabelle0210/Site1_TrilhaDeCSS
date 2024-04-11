@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;  
+}
+.banner {
+    border-bottom: 1px solid #33A8DB;
+    width: auto;
+    height: 605px;
+}
+
+/*::before: Insere conteúdo antes do conteúdo do elemento selecionado.
+::after: Insere conteúdo após o conteúdo do elemento selecionado.*/
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/banner.png'), rgb(51, 169, 219, .6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.4);
+    z-index: -7;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(49, 168, 221, 0) 50%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: -6;
+    filter: brightness(.6);
+}
+
+.banner-content{
+    width: 900px;
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+    margin-left:300px;
+}
+.logo{
+    
+}
+
+
